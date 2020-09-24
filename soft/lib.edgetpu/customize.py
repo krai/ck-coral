@@ -64,6 +64,9 @@ def setup(i):
     env[ep+'_LIB_DIRS'] = os.path.join(lib_dir)
     env[ep+'_INCLUDE0'] = os.path.join(install_dir, 'include')
 
+    env[ep+'_COMPILE_OPTIONS'] = "-DUSE_EDGETPU"
+    env[ep+'_LINK_OPTIONS'] = "-L" + lib_dir + " -ledgetpu"
+
     if 'LD_LIBRARY_PATH' in env:
         env['LD_LIBRARY_PATH'] = os.path.join(lib_dir, ':', env['LD_LIBRARY_PATH'])
     else:
