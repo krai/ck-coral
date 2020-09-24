@@ -9,8 +9,4 @@ $ ck install package --tags=lib,edgetpu,std_14.1_arm64
 $ ck install package --tags=lib,edgetpu,max_14.1_arm64
 ```
 
-Warning from the Coral.ai website
-
-```
-Caution: When operating the device using the maximum clock frequency, the metal on the USB Accelerator can become very hot to the touch. This might cause burn injuries. To avoid injury, either keep the device out of reach when operating it at maximum frequency, or use the reduced clock frequency.
-```
+For instructions on how run, please see [`program:object-detection-tflite-loadgen`](https://github.com/ctuning/ck-mlperf/blob/master/program/object-detection-tflite-loadgen/README.singlestream.md).
